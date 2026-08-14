@@ -75,14 +75,14 @@
             background: #fc8198;
             border-radius: 30px;
             padding: 25px 22px 30px;
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.15), inset 0 0 30px rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2), inset 0 0 40px rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.7);
             transition: box-shadow 0.3s ease, border-color 0.3s ease;
             position: relative;
         }
         .block:hover {
-            box-shadow: 0 0 50px rgba(255, 255, 255, 0.25), inset 0 0 50px rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 70px rgba(255, 255, 255, 0.35), inset 0 0 70px rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.95);
         }
 
         /* ===== НЕОНОВЫЕ ЗАГОЛОВКИ (белые со свечением) ===== */
@@ -91,7 +91,7 @@
             font-size: 2rem;
             font-weight: bold;
             color: #ffffff;
-            text-shadow: 0 0 7px #ffffff, 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3);
+            text-shadow: 0 0 10px #ffffff, 0 0 30px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 255, 255, 0.4);
             text-align: center;
             letter-spacing: 4px;
             margin-bottom: 15px;
@@ -493,7 +493,7 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        /* ===== ВИКТОРИНА ===== */
+        /* ===== РАНДОМНАЯ ВИКТОРИНА ===== */
         .quiz-question {
             font-size: 1.1rem;
             color: #49082c;
@@ -547,7 +547,7 @@
             justify-content: center;
         }
 
-        /* ===== КАЛЕНДАРЬ ДАТ ===== */
+        /* ===== КАЛЕНДАРЬ ДАТ (РАНДОМНЫЕ) ===== */
         .dates-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -585,18 +585,18 @@
         .place-item .name { font-weight: bold; font-size: 0.95rem; }
         .place-item .desc { font-size: 0.8rem; opacity: 0.6; }
 
-        /* ===== ОБЛАКО СЛОВ (отдельный блок, белая бархатная ленточка) ===== */
+        /* ===== ОБЛАКО СЛОВ (отдельный блок) ===== */
         .white-velvet-block {
             background: #fc8198;
             border-radius: 30px;
             padding: 25px 22px 30px;
             position: relative;
             border: 3px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.15), inset 0 0 30px rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2), inset 0 0 40px rgba(255, 255, 255, 0.08);
             transition: box-shadow 0.3s ease, border-color 0.3s ease;
         }
         .white-velvet-block:hover {
-            box-shadow: 0 0 50px rgba(255, 255, 255, 0.25), inset 0 0 50px rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 70px rgba(255, 255, 255, 0.35), inset 0 0 70px rgba(255, 255, 255, 0.12);
             border-color: rgba(255, 255, 255, 0.9);
         }
         .white-velvet-block::before,
@@ -880,79 +880,66 @@
             <div class="neon-sign">💕 что можно добавить в твой сайт</div>
 
             <div class="features-grid">
-
                 <div class="feature-card">
                     <div class="icon">📸</div>
                     <div class="title">Карусель фото</div>
                     <div class="desc">Фото пролистываются вручную или автоматически</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">💭</div>
                     <div class="title">Цитата дня</div>
                     <div class="desc">Каждый день новая фраза о любви</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">🎵</div>
                     <div class="title">Наша музыка</div>
                     <div class="desc">Плейлист из 3–5 песен</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">💌</div>
                     <div class="title">Письмо в будущее</div>
                     <div class="desc">Открывается по кнопке, слова на годовщину</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">📅</div>
                     <div class="title">Календарь важных дат</div>
                     <div class="desc">Все ваши даты в одном месте</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">📍</div>
                     <div class="title">Наши места</div>
                     <div class="desc">Фото с подписями мест, где вы были вместе</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">⏳</div>
                     <div class="title">Таймер до встречи</div>
                     <div class="desc">Обратный отсчёт до важной даты</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">☁️</div>
                     <div class="title">Облако слов</div>
                     <div class="desc">Ваши общие слова в виде облака</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">❓</div>
                     <div class="title">Викторина о вас</div>
                     <div class="desc">Вопросы про вас двоих</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">🎡</div>
                     <div class="title">Колесо фортуны</div>
                     <div class="desc">Случайное предсказание</div>
                 </div>
-
                 <div class="feature-card">
                     <div class="icon">🎲</div>
                     <div class="title">Свидание-рандом</div>
                     <div class="desc">Кнопка «Куда пойдём?»</div>
                 </div>
-
                 <div class="feature-card" style="border: 2px dashed #a75a99;">
                     <div class="icon">💡</div>
                     <div class="title">Своё предложение</div>
                     <div class="desc">Напиши, что хочешь добавить</div>
                 </div>
-
             </div>
         </div>
 
@@ -1039,29 +1026,11 @@
                 </div>
             </div>
 
+            <!-- ===== КАЛЕНДАРЬ ДАТ (РАНДОМНЫЕ) ===== -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">📅 Календарь важных дат</div>
-                <div class="dates-grid">
-                    <div class="date-item">
-                        <div class="emoji">👫</div>
-                        <div class="d">8 ИЮНЯ 2025</div>
-                        <div class="desc">первая встреча</div>
-                    </div>
-                    <div class="date-item">
-                        <div class="emoji">💕</div>
-                        <div class="d">10 МАЯ 2026</div>
-                        <div class="desc">поняли, что любим</div>
-                    </div>
-                    <div class="date-item">
-                        <div class="emoji">💋</div>
-                        <div class="d">14 ИЮНЯ 2026</div>
-                        <div class="desc">первый поцелуй</div>
-                    </div>
-                    <div class="date-item">
-                        <div class="emoji">🎡</div>
-                        <div class="d">29 ИЮЛЯ 2026</div>
-                        <div class="desc">день в парке</div>
-                    </div>
+                <div class="dates-grid" id="randomDatesGrid">
+                    <!-- заполняется через JS -->
                 </div>
             </div>
 
@@ -1093,7 +1062,7 @@
                 </div>
             </div>
 
-            <!-- ===== ОБЛАКО СЛОВ (отдельный блок, белая бархатная ленточка) ===== -->
+            <!-- ===== ОБЛАКО СЛОВ ===== -->
             <div class="white-velvet-block" style="margin-top:20px;">
                 <span class="white-bow-top-right">🎀</span>
                 <span class="white-bow-bottom-left">🎀</span>
@@ -1114,15 +1083,11 @@
                 </div>
             </div>
 
+            <!-- ===== РАНДОМНАЯ ВИКТОРИНА ===== -->
             <div style="margin-bottom:20px; margin-top:20px;">
                 <div class="section-title">❓ Викторина о вас</div>
-                <div class="quiz-question" id="quizQuestion">Когда мы впервые встретились?</div>
-                <div class="quiz-options" id="quizOptions">
-                    <button onclick="checkQuiz('wrong')">2024</button>
-                    <button onclick="checkQuiz('wrong')">2025</button>
-                    <button onclick="checkQuiz('correct')">8 июня 2025</button>
-                    <button onclick="checkQuiz('wrong')">10 мая 2026</button>
-                </div>
+                <div class="quiz-question" id="quizQuestion"></div>
+                <div class="quiz-options" id="quizOptions"></div>
                 <div class="quiz-result" id="quizResult"></div>
             </div>
 
@@ -1256,20 +1221,9 @@
         updateTimer();
         setInterval(updateTimer, 1000);
 
-        // ======= ВИКТОРИНА =======
-        function checkQuiz(answer) {
-            const result = document.getElementById('quizResult');
-            if (answer === 'correct') {
-                result.textContent = '✅ Правильно! Ты помнишь этот день 💕';
-                result.style.color = '#472738';
-            } else {
-                result.textContent = '❌ Не угадал(а)... Попробуй ещё!';
-                result.style.color = '#a75a99';
-            }
-        }
-
         // ======= КОЛЕСО ФОРТУНЫ =======
         const wheelData = ['❤️ Любовь', '💋 Поцелуй', '🎡 Парк', '🌙 Ночь', '💕 Счастье', '✨ Чудо'];
+
         function buildWheel() {
             const wheel = document.getElementById('wheel');
             const colors = ['#472738', '#a75a99', '#9c7ab8', '#fc8198', '#472738', '#a75a99'];
@@ -1305,6 +1259,7 @@
         buildWheel();
 
         let isSpinning = false;
+
         function spinWheel() {
             if (isSpinning) return;
             isSpinning = true;
@@ -1329,12 +1284,154 @@
             '🌙 Ночная прогулка по набережной', '🎨 Рисование вдвоём', '🧩 Настольные игры',
             '🎵 Концерт любимой группы'
         ];
+
         function randomDate() {
             const idea = dateIdeas[Math.floor(Math.random() * dateIdeas.length)];
             document.getElementById('dateIdea').textContent = '✨ ' + idea + ' ✨';
         }
 
-        // ======= ФОРМА ЗАЯВКИ (НОВЫЙ ТОКЕН) =======
+        // ============================================================
+        // ===== РАНДОМНЫЙ КАЛЕНДАРЬ ДАТ =====
+        // ============================================================
+        const randomDates = [{
+            emoji: '🎉',
+            date: '1 ЯНВАРЯ 2023',
+            desc: 'новый год'
+        }, {
+            emoji: '🌷',
+            date: '8 МАРТА 2023',
+            desc: 'праздник весны'
+        }, {
+            emoji: '☀️',
+            date: '1 ИЮНЯ 2023',
+            desc: 'день лета'
+        }, {
+            emoji: '🎄',
+            date: '31 ДЕКАБРЯ 2023',
+            desc: 'встреча Нового года'
+        }, {
+            emoji: '❤️',
+            date: '14 ФЕВРАЛЯ 2024',
+            desc: 'день влюблённых'
+        }, {
+            emoji: '🌸',
+            date: '1 МАЯ 2024',
+            desc: 'праздник весны'
+        }, {
+            emoji: '🎂',
+            date: '15 АВГУСТА 2024',
+            desc: 'день рождения'
+        }, {
+            emoji: '🍂',
+            date: '1 СЕНТЯБРЯ 2024',
+            desc: 'осень началась'
+        }, {
+            emoji: '❄️',
+            date: '1 ДЕКАБРЯ 2024',
+            desc: 'первый снег'
+        }, {
+            emoji: '🎆',
+            date: '9 МАЯ 2025',
+            desc: 'праздник Победы'
+        }, {
+            emoji: '🏖️',
+            date: '20 ИЮЛЯ 2025',
+            desc: 'летний отдых'
+        }, {
+            emoji: '🎃',
+            date: '31 ОКТЯБРЯ 2025',
+            desc: 'Хэллоуин'
+        }];
+
+        // Перемешиваем массив и берём 4 случайные даты
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function renderRandomDates() {
+            const shuffled = shuffleArray([...randomDates]);
+            const selected = shuffled.slice(0, 4);
+            const grid = document.getElementById('randomDatesGrid');
+            grid.innerHTML = selected.map(item => `
+                        <div class="date-item">
+                            <div class="emoji">${item.emoji}</div>
+                            <div class="d">${item.date}</div>
+                            <div class="desc">${item.desc}</div>
+                        </div>
+                    `).join('');
+        }
+        renderRandomDates();
+
+        // ============================================================
+        // ===== РАНДОМНАЯ ВИКТОРИНА =====
+        // ============================================================
+        const quizData = [{
+            question: 'Какой цвет у неба?',
+            options: ['Красный', 'Голубой', 'Зелёный', 'Жёлтый'],
+            correct: 1
+        }, {
+            question: 'Сколько дней в неделе?',
+            options: ['5', '6', '7', '8'],
+            correct: 2
+        }, {
+            question: 'Какая планета самая большая?',
+            options: ['Земля', 'Марс', 'Юпитер', 'Венера'],
+            correct: 2
+        }, {
+            question: 'Кто написал "Евгений Онегин"?',
+            options: ['Толстой', 'Пушкин', 'Достоевский', 'Чехов'],
+            correct: 1
+        }, {
+            question: 'Сколько континентов на Земле?',
+            options: ['5', '6', '7', '8'],
+            correct: 2
+        }, {
+            question: 'Какой океан самый большой?',
+            options: ['Тихий', 'Атлантический', 'Индийский', 'Северный Ледовитый'],
+            correct: 0
+        }, {
+            question: 'Какое животное самое быстрое?',
+            options: ['Лев', 'Гепард', 'Леопард', 'Зебра'],
+            correct: 1
+        }, {
+            question: 'Какой язык программирования самый популярный?',
+            options: ['Python', 'Java', 'C++', 'JavaScript'],
+            correct: 0
+        }];
+
+        let currentQuiz = null;
+
+        function loadRandomQuiz() {
+            const data = quizData[Math.floor(Math.random() * quizData.length)];
+            currentQuiz = data;
+            document.getElementById('quizQuestion').textContent = data.question;
+            const container = document.getElementById('quizOptions');
+            container.innerHTML = data.options.map((opt, i) =>
+                `<button onclick="checkQuiz(${i})">${opt}</button>`
+            ).join('');
+            document.getElementById('quizResult').textContent = '';
+        }
+
+        function checkQuiz(selected) {
+            const result = document.getElementById('quizResult');
+            if (selected === currentQuiz.correct) {
+                result.textContent = '✅ Правильно! Ты умница 💕';
+                result.style.color = '#472738';
+            } else {
+                result.textContent = '❌ Не угадал(а)... Попробуй ещё!';
+                result.style.color = '#a75a99';
+            }
+        }
+
+        loadRandomQuiz();
+
+        // ============================================================
+        // ===== ФОРМА ЗАЯВКИ (НОВЫЙ ТОКЕН) =====
+        // ============================================================
         function sendOrder(e) {
             e.preventDefault();
             const name = document.getElementById('userName').value.trim();
@@ -1357,9 +1454,8 @@
                 '💡 Своё предложение: ' + (idea || 'нет') +
                 '%0A%0A💕 Свяжись с клиентом!';
 
-            // ✅ НОВЫЙ ТОКЕН
             const token = '8755962408:AAF-LCf85Sh1i5jKMxCdoqW-44Loy3HTFJg';
-            const chatId = '661154987'; // твой chat_id
+            const chatId = '661154987';
 
             fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=Markdown`)
                 .then(response => response.json())
@@ -1390,7 +1486,7 @@
         ];
         document.getElementById('dailyQuote').textContent = quotes[Math.floor(Math.random() * quotes.length)];
 
-        // ======= ОБЛАКО СЛОВ (при клике слова становятся белыми и неоновыми) =======
+        // ======= ОБЛАКО СЛОВ =======
         document.querySelectorAll('.cloud-word').forEach(word => {
             word.addEventListener('click', function() {
                 const isActive = this.dataset.active === 'true';
