@@ -70,40 +70,43 @@
             gap: 30px;
         }
 
-        /* ===== БЛОКИ ===== */
+        /* ===== БЛОКИ (белая неоновая обводка) ===== */
         .block {
             background: #fc8198;
             border-radius: 30px;
             padding: 25px 22px 30px;
-            box-shadow: 0 0 20px rgba(212, 76, 132, 0.3);
-            border: 2px solid #a75a99;
-            transition: box-shadow 0.3s ease;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.15), inset 0 0 30px rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
             position: relative;
         }
         .block:hover {
-            box-shadow: 0 0 40px rgba(212, 76, 132, 0.4);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.25), inset 0 0 50px rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.9);
         }
 
-        /* ===== ЗАГОЛОВКИ ===== */
+        /* ===== НЕОНОВЫЕ ЗАГОЛОВКИ (белые со свечением) ===== */
         .neon-sign {
             font-family: 'Georgia', serif;
             font-size: 2rem;
             font-weight: bold;
-            color: #49082c;
-            text-shadow: 0 0 10px rgba(73, 8, 44, 0.2);
+            color: #ffffff;
+            text-shadow: 0 0 7px #ffffff, 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3);
             text-align: center;
             letter-spacing: 4px;
             margin-bottom: 15px;
             padding: 8px 0;
-            border-bottom: 2px solid rgba(73, 8, 44, 0.1);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.15);
         }
         .neon-sign small {
             font-size: 0.9rem;
             letter-spacing: 2px;
-            opacity: 0.7;
+            opacity: 0.8;
             display: block;
             font-weight: normal;
             margin-top: 4px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
         .section-title {
             color: #49082c;
@@ -143,7 +146,7 @@
             font-size: 0.95rem;
             cursor: pointer;
             transition: 0.3s;
-            border: 1px solid rgba(73, 8, 44, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .btn-secondary:hover {
             background: #a75a99;
@@ -159,20 +162,22 @@
         .hero .logo {
             font-size: 4rem;
             font-weight: bold;
-            color: #49082c;
-            text-shadow: 0 0 30px rgba(73, 8, 44, 0.2);
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
             letter-spacing: 10px;
         }
         .hero .logo small {
             font-size: 1.2rem;
             letter-spacing: 4px;
             display: block;
-            opacity: 0.7;
+            opacity: 0.8;
             margin-top: 4px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
         .hero .slogan {
             font-size: 1.4rem;
-            color: #472738;
+            color: #49082c;
             margin: 15px 0 25px;
             font-style: italic;
         }
@@ -367,7 +372,7 @@
             resize: vertical;
         }
 
-        /* ===== РОМАНТИЧЕСКИЕ БЛОКИ (сетка) ===== */
+        /* ===== РОМАНТИЧЕСКИЕ БЛОКИ ===== */
         .features-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -580,7 +585,57 @@
         .place-item .name { font-weight: bold; font-size: 0.95rem; }
         .place-item .desc { font-size: 0.8rem; opacity: 0.6; }
 
-        /* ===== ОБЛАКО СЛОВ ===== */
+        /* ===== ОБЛАКО СЛОВ (отдельный блок, белая бархатная ленточка) ===== */
+        .white-velvet-block {
+            background: #fc8198;
+            border-radius: 30px;
+            padding: 25px 22px 30px;
+            position: relative;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.15), inset 0 0 30px rgba(255, 255, 255, 0.05);
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .white-velvet-block:hover {
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.25), inset 0 0 50px rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.9);
+        }
+        .white-velvet-block::before,
+        .white-velvet-block::after {
+            content: '🎀';
+            position: absolute;
+            font-size: 2.2rem;
+            opacity: 0.5;
+            filter: grayscale(0.3);
+        }
+        .white-velvet-block::before {
+            top: -12px;
+            left: -8px;
+            transform: rotate(-15deg);
+        }
+        .white-velvet-block::after {
+            bottom: -12px;
+            right: -8px;
+            transform: rotate(160deg);
+        }
+        .white-bow-top-right {
+            position: absolute;
+            top: -12px;
+            right: -8px;
+            font-size: 2.2rem;
+            transform: rotate(70deg);
+            opacity: 0.5;
+            filter: grayscale(0.3);
+        }
+        .white-bow-bottom-left {
+            position: absolute;
+            bottom: -12px;
+            left: -8px;
+            font-size: 2.2rem;
+            transform: rotate(-140deg);
+            opacity: 0.5;
+            filter: grayscale(0.3);
+        }
+
         .cloud-container {
             display: flex;
             flex-wrap: wrap;
@@ -592,13 +647,17 @@
             font-family: 'Georgia', serif;
             color: #49082c;
             transition: all 0.3s ease;
-            cursor: default;
+            cursor: pointer;
             padding: 2px 4px;
             border-radius: 8px;
+            user-select: none;
+        }
+        .cloud-word.active {
+            color: #ffffff;
+            text-shadow: 0 0 7px #ffffff, 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3);
         }
         .cloud-word:hover {
             transform: scale(1.1);
-            color: #472738;
         }
 
         /* ===== СТИКЕР-ДОЖДЬ ===== */
@@ -685,7 +744,7 @@
             color: #49082c;
             font-size: 0.95rem;
             margin-top: 25px;
-            border-top: 1px dashed rgba(73, 8, 44, 0.15);
+            border-top: 1px dashed rgba(255, 255, 255, 0.2);
             padding-top: 20px;
             text-align: center;
             opacity: 0.6;
@@ -703,6 +762,7 @@
             .places-grid { grid-template-columns: 1fr 1fr; }
             .dates-grid { grid-template-columns: 1fr; }
             .block { padding: 18px 14px 22px; }
+            .white-velvet-block { padding: 18px 14px 22px; }
             .wheel { width: 160px; height: 160px; }
             .timer-display { font-size: 1.6rem; }
         }
@@ -821,84 +881,72 @@
 
             <div class="features-grid">
 
-                <!-- 1. Карусель фото -->
                 <div class="feature-card">
                     <div class="icon">📸</div>
                     <div class="title">Карусель фото</div>
                     <div class="desc">Фото пролистываются вручную или автоматически</div>
                 </div>
 
-                <!-- 2. Цитата дня -->
                 <div class="feature-card">
                     <div class="icon">💭</div>
                     <div class="title">Цитата дня</div>
                     <div class="desc">Каждый день новая фраза о любви</div>
                 </div>
 
-                <!-- 3. Наша музыка -->
                 <div class="feature-card">
                     <div class="icon">🎵</div>
                     <div class="title">Наша музыка</div>
                     <div class="desc">Плейлист из 3–5 песен</div>
                 </div>
 
-                <!-- 4. Письмо в будущее -->
                 <div class="feature-card">
                     <div class="icon">💌</div>
                     <div class="title">Письмо в будущее</div>
                     <div class="desc">Открывается по кнопке, слова на годовщину</div>
                 </div>
 
-                <!-- 5. Календарь важных дат -->
                 <div class="feature-card">
                     <div class="icon">📅</div>
                     <div class="title">Календарь важных дат</div>
                     <div class="desc">Все ваши даты в одном месте</div>
                 </div>
 
-                <!-- 6. Наши места -->
                 <div class="feature-card">
                     <div class="icon">📍</div>
                     <div class="title">Наши места</div>
                     <div class="desc">Фото с подписями мест, где вы были вместе</div>
                 </div>
 
-                <!-- 7. Таймер до встречи -->
                 <div class="feature-card">
                     <div class="icon">⏳</div>
                     <div class="title">Таймер до встречи</div>
                     <div class="desc">Обратный отсчёт до важной даты</div>
                 </div>
 
-                <!-- 8. Облако слов -->
                 <div class="feature-card">
                     <div class="icon">☁️</div>
                     <div class="title">Облако слов</div>
                     <div class="desc">Ваши общие слова в виде облака</div>
                 </div>
 
-                <!-- 9. Викторина о вас -->
                 <div class="feature-card">
                     <div class="icon">❓</div>
                     <div class="title">Викторина о вас</div>
                     <div class="desc">Вопросы про вас двоих</div>
                 </div>
 
-                <!-- 10. Колесо фортуны -->
                 <div class="feature-card">
                     <div class="icon">🎡</div>
                     <div class="title">Колесо фортуны</div>
                     <div class="desc">Случайное предсказание</div>
                 </div>
 
-                <!-- 11. Свидание-рандом -->
                 <div class="feature-card">
                     <div class="icon">🎲</div>
                     <div class="title">Свидание-рандом</div>
                     <div class="desc">Кнопка «Куда пойдём?»</div>
                 </div>
 
-                <!-- 12. Своё предложение -->
                 <div class="feature-card" style="border: 2px dashed #a75a99;">
                     <div class="icon">💡</div>
                     <div class="title">Своё предложение</div>
@@ -979,12 +1027,11 @@
         </div>
 
         <!-- ============================================================ -->
-        <!-- ===== БЛОК 8: ДЕМО-ФИШКИ (для примера) ===== -->
+        <!-- ===== БЛОК 8: ДЕМО-ФИШКИ ===== -->
         <!-- ============================================================ -->
         <div class="block">
             <div class="neon-sign">🎡 примеры фишек</div>
 
-            <!-- Цитата дня -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">💭 Цитата дня</div>
                 <div style="font-size:1.1rem; color:#49082c; font-family:'Georgia',serif; font-style:italic;" id="dailyQuote">
@@ -992,7 +1039,6 @@
                 </div>
             </div>
 
-            <!-- Календарь дат -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">📅 Календарь важных дат</div>
                 <div class="dates-grid">
@@ -1019,7 +1065,6 @@
                 </div>
             </div>
 
-            <!-- Наши места -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">📍 Наши места</div>
                 <div class="places-grid">
@@ -1041,7 +1086,6 @@
                 </div>
             </div>
 
-            <!-- Таймер до встречи -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">⏳ Таймер до следующей встречи</div>
                 <div class="timer-display" id="timerDisplay">
@@ -1049,25 +1093,28 @@
                 </div>
             </div>
 
-            <!-- Облако слов -->
-            <div style="margin-bottom:20px;">
-                <div class="section-title">☁️ Облако слов</div>
-                <div class="cloud-container">
-                    <span class="cloud-word" style="font-size:2rem;">любовь</span>
-                    <span class="cloud-word" style="font-size:1.6rem;">нежность</span>
-                    <span class="cloud-word" style="font-size:2.2rem;">ты</span>
-                    <span class="cloud-word" style="font-size:1.9rem;">я</span>
-                    <span class="cloud-word" style="font-size:2.4rem;">мы</span>
-                    <span class="cloud-word" style="font-size:1.5rem;">доверие</span>
-                    <span class="cloud-word" style="font-size:1.8rem;">тепло</span>
-                    <span class="cloud-word" style="font-size:2rem;">семья</span>
-                    <span class="cloud-word" style="font-size:1.7rem;">уют</span>
-                    <span class="cloud-word" style="font-size:2.1rem;">дом</span>
+            <!-- ===== ОБЛАКО СЛОВ (отдельный блок, белая бархатная ленточка) ===== -->
+            <div class="white-velvet-block" style="margin-top:20px;">
+                <span class="white-bow-top-right">🎀</span>
+                <span class="white-bow-bottom-left">🎀</span>
+                <div class="neon-sign" style="font-size:1.5rem; border-bottom-color: rgba(255,255,255,0.1);">
+                    ☁️ облако слов
+                </div>
+                <div class="cloud-container" id="cloudContainer">
+                    <span class="cloud-word" style="font-size:2rem;" data-active="false">любовь</span>
+                    <span class="cloud-word" style="font-size:1.6rem;" data-active="false">нежность</span>
+                    <span class="cloud-word" style="font-size:2.2rem;" data-active="false">ты</span>
+                    <span class="cloud-word" style="font-size:1.9rem;" data-active="false">я</span>
+                    <span class="cloud-word" style="font-size:2.4rem;" data-active="false">мы</span>
+                    <span class="cloud-word" style="font-size:1.5rem;" data-active="false">доверие</span>
+                    <span class="cloud-word" style="font-size:1.8rem;" data-active="false">тепло</span>
+                    <span class="cloud-word" style="font-size:2rem;" data-active="false">семья</span>
+                    <span class="cloud-word" style="font-size:1.7rem;" data-active="false">уют</span>
+                    <span class="cloud-word" style="font-size:2.1rem;" data-active="false">дом</span>
                 </div>
             </div>
 
-            <!-- Викторина -->
-            <div style="margin-bottom:20px;">
+            <div style="margin-bottom:20px; margin-top:20px;">
                 <div class="section-title">❓ Викторина о вас</div>
                 <div class="quiz-question" id="quizQuestion">Когда мы впервые встретились?</div>
                 <div class="quiz-options" id="quizOptions">
@@ -1079,7 +1126,6 @@
                 <div class="quiz-result" id="quizResult"></div>
             </div>
 
-            <!-- Колесо фортуны -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">🎡 Колесо фортуны</div>
                 <div class="wheel-container">
@@ -1091,7 +1137,6 @@
                 </div>
             </div>
 
-            <!-- Свидание-рандом -->
             <div>
                 <div class="section-title">🎲 Свидание-рандом</div>
                 <button class="btn-secondary" onclick="randomDate()">🎲 Куда пойдём?</button>
@@ -1174,7 +1219,6 @@
                 currentSlide = (currentSlide + 1) % totalSlides;
                 slides.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
             });
-            // Автоматическая прокрутка
             setInterval(() => {
                 currentSlide = (currentSlide + 1) % totalSlides;
                 slides.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
@@ -1192,7 +1236,7 @@
             });
         });
 
-        // ======= ТАЙМЕР ДО ВСТРЕЧИ =======
+        // ======= ТАЙМЕР =======
         function updateTimer() {
             const target = new Date('2026-12-31T00:00:00');
             const now = new Date();
@@ -1226,8 +1270,6 @@
 
         // ======= КОЛЕСО ФОРТУНЫ =======
         const wheelData = ['❤️ Любовь', '💋 Поцелуй', '🎡 Парк', '🌙 Ночь', '💕 Счастье', '✨ Чудо'];
-        let wheelSegments = [];
-
         function buildWheel() {
             const wheel = document.getElementById('wheel');
             const colors = ['#472738', '#a75a99', '#9c7ab8', '#fc8198', '#472738', '#a75a99'];
@@ -1263,7 +1305,6 @@
         buildWheel();
 
         let isSpinning = false;
-
         function spinWheel() {
             if (isSpinning) return;
             isSpinning = true;
@@ -1283,24 +1324,17 @@
 
         // ======= СВИДАНИЕ-РАНДОМ =======
         const dateIdeas = [
-            '🎡 Парк аттракционов',
-            '🌳 Прогулка в парке',
-            '☕ Кофе в уютной кофейне',
-            '🎬 Кино на закате',
-            '🍕 Ужин при свечах',
-            '🚲 Велосипедная прогулка',
-            '🌙 Ночная прогулка по набережной',
-            '🎨 Рисование вдвоём',
-            '🧩 Настольные игры',
+            '🎡 Парк аттракционов', '🌳 Прогулка в парке', '☕ Кофе в уютной кофейне',
+            '🎬 Кино на закате', '🍕 Ужин при свечах', '🚲 Велосипедная прогулка',
+            '🌙 Ночная прогулка по набережной', '🎨 Рисование вдвоём', '🧩 Настольные игры',
             '🎵 Концерт любимой группы'
         ];
-
         function randomDate() {
             const idea = dateIdeas[Math.floor(Math.random() * dateIdeas.length)];
             document.getElementById('dateIdea').textContent = '✨ ' + idea + ' ✨';
         }
 
-        // ======= ФОРМА ЗАЯВКИ (TELEGRAM) =======
+        // ======= ФОРМА ЗАЯВКИ (НОВЫЙ ТОКЕН) =======
         function sendOrder(e) {
             e.preventDefault();
             const name = document.getElementById('userName').value.trim();
@@ -1323,9 +1357,9 @@
                 '💡 Своё предложение: ' + (idea || 'нет') +
                 '%0A%0A💕 Свяжись с клиентом!';
 
-            // ✅ ТВОЙ ТОКЕН И CHAT_ID
-            const token = '8004748194:AAGdywZ-5Dd3YPzz1CnGLYV1cA2cJKT3Sls';
-            const chatId = '661154987';
+            // ✅ НОВЫЙ ТОКЕН
+            const token = '8755962408:AAF-LCf85Sh1i5jKMxCdoqW-44Loy3HTFJg';
+            const chatId = '661154987'; // твой chat_id
 
             fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=Markdown`)
                 .then(response => response.json())
@@ -1355,6 +1389,20 @@
             '«Наша любовь — это сказка, в которой мы главные герои»'
         ];
         document.getElementById('dailyQuote').textContent = quotes[Math.floor(Math.random() * quotes.length)];
+
+        // ======= ОБЛАКО СЛОВ (при клике слова становятся белыми и неоновыми) =======
+        document.querySelectorAll('.cloud-word').forEach(word => {
+            word.addEventListener('click', function() {
+                const isActive = this.dataset.active === 'true';
+                if (isActive) {
+                    this.dataset.active = 'false';
+                    this.classList.remove('active');
+                } else {
+                    this.dataset.active = 'true';
+                    this.classList.add('active');
+                }
+            });
+        });
 
         console.log('💕 SQST — сайт готов к работе!');
     </script>
