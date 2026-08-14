@@ -14,7 +14,7 @@
 
         body {
             min-height: 100vh;
-            background: #d44c84;
+            background: #ac3c64;
             font-family: 'Georgia', 'Segoe UI', cursive;
             display: flex;
             flex-direction: column;
@@ -70,22 +70,22 @@
             gap: 30px;
         }
 
-        /* ===== БЛОКИ (белая неоновая обводка) ===== */
+        /* ===== БЛОКИ (обводка #ac5471) ===== */
         .block {
-            background: #fc8198;
+            background: #dc9cb3;
             border-radius: 30px;
             padding: 25px 22px 30px;
-            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2), inset 0 0 40px rgba(255, 255, 255, 0.08);
-            border: 2px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 40px rgba(172, 84, 113, 0.25);
+            border: 2px solid #ac5471;
             transition: box-shadow 0.3s ease, border-color 0.3s ease;
             position: relative;
         }
         .block:hover {
-            box-shadow: 0 0 70px rgba(255, 255, 255, 0.35), inset 0 0 70px rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 60px rgba(172, 84, 113, 0.35);
+            border-color: #5f182d;
         }
 
-        /* ===== НЕОНОВЫЕ ЗАГОЛОВКИ (белые со свечением) ===== */
+        /* ===== НЕОНОВЫЕ ЗАГОЛОВКИ (белые) ===== */
         .neon-sign {
             font-family: 'Georgia', serif;
             font-size: 2rem;
@@ -109,7 +109,7 @@
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
         .section-title {
-            color: #49082c;
+            color: #5f182d;
             font-size: 1.2rem;
             font-family: 'Georgia', serif;
             margin-bottom: 12px;
@@ -118,7 +118,7 @@
 
         /* ===== КНОПКИ ===== */
         .btn-primary {
-            background: #a75a99;
+            background: #ac5471;
             border: none;
             padding: 14px 35px;
             border-radius: 60px;
@@ -126,7 +126,7 @@
             font-weight: bold;
             color: #fff;
             cursor: pointer;
-            box-shadow: 0 6px 25px rgba(167, 90, 153, 0.4);
+            box-shadow: 0 6px 25px rgba(172, 84, 113, 0.4);
             font-family: 'Georgia', serif;
             transition: 0.3s;
             display: inline-block;
@@ -134,14 +134,14 @@
         }
         .btn-primary:hover {
             transform: scale(1.05);
-            background: #472738;
+            background: #5f182d;
         }
         .btn-secondary {
-            background: #472738;
+            background: #5f182d;
             border: none;
             padding: 10px 25px;
             border-radius: 30px;
-            color: #fc8198;
+            color: #dc9cb3;
             font-family: 'Georgia', serif;
             font-size: 0.95rem;
             cursor: pointer;
@@ -149,7 +149,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .btn-secondary:hover {
-            background: #a75a99;
+            background: #ac5471;
             color: #fff;
             transform: scale(1.05);
         }
@@ -177,7 +177,7 @@
         }
         .hero .slogan {
             font-size: 1.4rem;
-            color: #49082c;
+            color: #5f182d;
             margin: 15px 0 25px;
             font-style: italic;
         }
@@ -209,8 +209,8 @@
             transform: translateY(-50%);
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(8px);
-            border: 1px solid rgba(167, 90, 153, 0.3);
-            color: #49082c;
+            border: 1px solid rgba(172, 84, 113, 0.3);
+            color: #5f182d;
             font-size: 2rem;
             padding: 8px 16px;
             cursor: pointer;
@@ -232,17 +232,17 @@
             gap: 14px;
         }
         .service-item {
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             border-radius: 20px;
             padding: 18px 12px;
-            border: 1px solid rgba(167, 90, 153, 0.1);
+            border: 1px solid rgba(172, 84, 113, 0.1);
             text-align: center;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             transition: 0.3s;
         }
         .service-item:hover {
-            background: rgba(167, 90, 153, 0.15);
+            background: rgba(172, 84, 113, 0.15);
             transform: scale(1.02);
         }
         .service-item .icon {
@@ -251,7 +251,7 @@
         }
         .service-item .price {
             font-weight: bold;
-            color: #472738;
+            color: #5d2a3a;
             margin-top: 6px;
         }
 
@@ -264,31 +264,31 @@
             margin: 10px 0 15px;
         }
         .calculator-options label {
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             padding: 8px 16px;
             border-radius: 30px;
-            border: 1px solid rgba(167, 90, 153, 0.1);
-            color: #49082c;
+            border: 1px solid rgba(172, 84, 113, 0.1);
+            color: #5f182d;
             font-family: 'Georgia', serif;
             cursor: pointer;
             transition: 0.3s;
             font-size: 0.95rem;
         }
         .calculator-options label:hover {
-            background: rgba(167, 90, 153, 0.15);
+            background: rgba(172, 84, 113, 0.15);
         }
         .calculator-options input[type="checkbox"] {
             margin-right: 6px;
-            accent-color: #a75a99;
+            accent-color: #ac5471;
         }
         .calculator-total {
             font-size: 2rem;
             font-weight: bold;
-            color: #49082c;
+            color: #5f182d;
             text-align: center;
         }
         .calculator-total span {
-            color: #472738;
+            color: #5d2a3a;
         }
 
         /* ===== КАРТА + ФОТО ===== */
@@ -303,7 +303,7 @@
             min-height: 220px;
             border-radius: 24px;
             overflow: hidden;
-            border: 2px solid rgba(167, 90, 153, 0.2);
+            border: 2px solid rgba(172, 84, 113, 0.2);
         }
         .map-container iframe {
             width: 100%;
@@ -317,11 +317,11 @@
             min-height: 220px;
             border-radius: 24px;
             overflow: hidden;
-            border: 2px solid rgba(167, 90, 153, 0.2);
+            border: 2px solid rgba(172, 84, 113, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(167, 90, 153, 0.05);
+            background: rgba(172, 84, 113, 0.05);
         }
         .map-photo-side img {
             width: 100%;
@@ -329,47 +329,12 @@
             object-fit: cover;
         }
         .map-label {
-            color: #49082c;
+            color: #5f182d;
             font-size: 0.9rem;
             margin-top: 8px;
             opacity: 0.7;
             text-align: center;
             font-style: italic;
-        }
-
-        /* ===== ФОРМЫ ===== */
-        .form-group {
-            margin-bottom: 14px;
-        }
-        .form-group label {
-            display: block;
-            color: #49082c;
-            font-family: 'Georgia', serif;
-            margin-bottom: 4px;
-            font-weight: bold;
-        }
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px 16px;
-            border-radius: 16px;
-            border: 2px solid rgba(167, 90, 153, 0.15);
-            background: rgba(255, 255, 255, 0.6);
-            font-family: 'Georgia', serif;
-            font-size: 1rem;
-            color: #49082c;
-            transition: 0.3s;
-        }
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: #a75a99;
-            outline: none;
-            background: rgba(255, 255, 255, 0.8);
-        }
-        .form-group textarea {
-            min-height: 80px;
-            resize: vertical;
         }
 
         /* ===== РОМАНТИЧЕСКИЕ БЛОКИ ===== */
@@ -379,17 +344,17 @@
             gap: 20px;
         }
         .feature-card {
-            background: rgba(167, 90, 153, 0.06);
+            background: rgba(172, 84, 113, 0.06);
             border-radius: 20px;
             padding: 18px 14px;
-            border: 1px solid rgba(167, 90, 153, 0.06);
+            border: 1px solid rgba(172, 84, 113, 0.06);
             text-align: center;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             transition: 0.3s;
         }
         .feature-card:hover {
-            background: rgba(167, 90, 153, 0.12);
+            background: rgba(172, 84, 113, 0.12);
             transform: scale(1.01);
         }
         .feature-card .icon {
@@ -416,11 +381,11 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: 4px solid #49082c;
+            border: 4px solid #5f182d;
             position: relative;
             overflow: hidden;
             transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
         .wheel-segment {
             position: absolute;
@@ -433,7 +398,7 @@
             font-size: 0.8rem;
             font-weight: bold;
             color: #fff;
-            text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
         }
         .wheel-center {
             position: absolute;
@@ -442,14 +407,14 @@
             transform: translate(-50%, -50%);
             width: 40px;
             height: 40px;
-            background: #49082c;
+            background: #5f182d;
             border-radius: 50%;
-            border: 3px solid #fc8198;
+            border: 3px solid #dc9cb3;
             z-index: 2;
         }
         .wheel-result {
             font-size: 1.2rem;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             font-weight: bold;
             min-height: 30px;
@@ -459,13 +424,13 @@
         .timer-display {
             font-size: 2.2rem;
             font-weight: bold;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             text-align: center;
             padding: 10px 0;
         }
         .timer-display span {
-            background: rgba(167, 90, 153, 0.1);
+            background: rgba(172, 84, 113, 0.1);
             padding: 4px 12px;
             border-radius: 12px;
             margin: 0 4px;
@@ -474,12 +439,12 @@
         /* ===== ПИСЬМО В БУДУЩЕЕ ===== */
         .letter-content {
             display: none;
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             border-radius: 20px;
             padding: 20px;
             margin-top: 10px;
-            border: 2px dashed rgba(167, 90, 153, 0.2);
-            color: #49082c;
+            border: 2px dashed rgba(172, 84, 113, 0.2);
+            color: #5f182d;
             font-family: 'Georgia', serif;
             text-align: left;
             line-height: 1.8;
@@ -496,7 +461,7 @@
         /* ===== РАНДОМНАЯ ВИКТОРИНА ===== */
         .quiz-question {
             font-size: 1.1rem;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             margin-bottom: 10px;
             font-weight: bold;
@@ -508,24 +473,24 @@
             justify-content: center;
         }
         .quiz-options button {
-            background: rgba(167, 90, 153, 0.08);
-            border: 1px solid rgba(167, 90, 153, 0.15);
+            background: rgba(172, 84, 113, 0.08);
+            border: 1px solid rgba(172, 84, 113, 0.15);
             padding: 8px 20px;
             border-radius: 30px;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             cursor: pointer;
             transition: 0.3s;
             font-size: 0.95rem;
         }
         .quiz-options button:hover {
-            background: #a75a99;
+            background: #ac5471;
             color: #fff;
         }
         .quiz-result {
             margin-top: 12px;
             font-size: 1.1rem;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             font-style: italic;
             min-height: 30px;
@@ -534,12 +499,12 @@
         /* ===== СВИДАНИЕ-РАНДОМ ===== */
         .date-idea {
             font-size: 1.3rem;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
             padding: 15px;
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             border-radius: 20px;
-            border: 2px dashed rgba(167, 90, 153, 0.15);
+            border: 2px dashed rgba(172, 84, 113, 0.15);
             text-align: center;
             min-height: 60px;
             display: flex;
@@ -547,18 +512,18 @@
             justify-content: center;
         }
 
-        /* ===== КАЛЕНДАРЬ ДАТ (РАНДОМНЫЕ) ===== */
+        /* ===== КАЛЕНДАРЬ ДАТ ===== */
         .dates-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
         }
         .date-item {
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             border-radius: 18px;
             padding: 14px 10px;
-            border: 1px solid rgba(167, 90, 153, 0.1);
-            color: #49082c;
+            border: 1px solid rgba(172, 84, 113, 0.1);
+            color: #5f182d;
             font-family: 'Georgia', serif;
             text-align: center;
         }
@@ -573,31 +538,31 @@
             gap: 14px;
         }
         .place-item {
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             border-radius: 18px;
             padding: 14px 10px;
-            border: 1px solid rgba(167, 90, 153, 0.1);
+            border: 1px solid rgba(172, 84, 113, 0.1);
             text-align: center;
-            color: #49082c;
+            color: #5f182d;
             font-family: 'Georgia', serif;
         }
         .place-item .emoji { font-size: 2rem; }
         .place-item .name { font-weight: bold; font-size: 0.95rem; }
         .place-item .desc { font-size: 0.8rem; opacity: 0.6; }
 
-        /* ===== ОБЛАКО СЛОВ (отдельный блок) ===== */
+        /* ===== ОБЛАКО СЛОВ ===== */
         .white-velvet-block {
-            background: #fc8198;
+            background: #dc9cb3;
             border-radius: 30px;
             padding: 25px 22px 30px;
             position: relative;
-            border: 3px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2), inset 0 0 40px rgba(255, 255, 255, 0.08);
+            border: 3px solid #c8a7ae;
+            box-shadow: 0 0 40px rgba(200, 167, 174, 0.2);
             transition: box-shadow 0.3s ease, border-color 0.3s ease;
         }
         .white-velvet-block:hover {
-            box-shadow: 0 0 70px rgba(255, 255, 255, 0.35), inset 0 0 70px rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 60px rgba(200, 167, 174, 0.3);
+            border-color: #ac5471;
         }
         .white-velvet-block::before,
         .white-velvet-block::after {
@@ -645,7 +610,7 @@
         }
         .cloud-word {
             font-family: 'Georgia', serif;
-            color: #49082c;
+            color: #5f182d;
             transition: all 0.3s ease;
             cursor: pointer;
             padding: 2px 4px;
@@ -664,23 +629,23 @@
         #rainArea {
             width: 100%;
             min-height: 120px;
-            background: rgba(167, 90, 153, 0.06);
+            background: rgba(172, 84, 113, 0.06);
             border-radius: 24px;
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            border: 2px dashed rgba(167, 90, 153, 0.15);
+            border: 2px dashed rgba(172, 84, 113, 0.15);
             transition: 0.3s;
         }
         #rainArea:hover {
-            background: rgba(167, 90, 153, 0.1);
+            background: rgba(172, 84, 113, 0.1);
         }
         .rain-hint {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #472738;
+            color: #5d2a3a;
             font-size: 1.8rem;
             opacity: 0.3;
             pointer-events: none;
@@ -694,10 +659,10 @@
             justify-content: space-between;
             padding: 10px 15px;
             margin: 6px 0;
-            background: rgba(167, 90, 153, 0.08);
+            background: rgba(172, 84, 113, 0.08);
             border-radius: 16px;
-            border: 1px solid rgba(167, 90, 153, 0.1);
-            color: #49082c;
+            border: 1px solid rgba(172, 84, 113, 0.1);
+            color: #5f182d;
             font-family: 'Georgia', serif;
             flex-wrap: wrap;
             gap: 8px;
@@ -706,7 +671,7 @@
             font-size: 0.95rem;
         }
         .playlist-item .play-btn {
-            background: #a75a99;
+            background: #ac5471;
             border: none;
             padding: 6px 18px;
             border-radius: 30px;
@@ -718,10 +683,10 @@
             font-family: inherit;
         }
         .playlist-item .play-btn:hover {
-            background: #472738;
+            background: #5f182d;
         }
         .play-all-btn {
-            background: #a75a99;
+            background: #ac5471;
             border: none;
             padding: 12px 35px;
             border-radius: 40px;
@@ -732,16 +697,16 @@
             transition: 0.3s;
             font-family: 'Georgia', serif;
             margin-top: 10px;
-            box-shadow: 0 4px 20px rgba(167, 90, 153, 0.3);
+            box-shadow: 0 4px 20px rgba(172, 84, 113, 0.3);
         }
         .play-all-btn:hover {
-            background: #472738;
+            background: #5f182d;
             transform: scale(1.02);
         }
 
         /* ===== ФУТЕР ===== */
         .footer {
-            color: #49082c;
+            color: #5f182d;
             font-size: 0.95rem;
             margin-top: 25px;
             border-top: 1px dashed rgba(255, 255, 255, 0.2);
@@ -790,8 +755,8 @@
                 <small>создаю сайты о любви и не только</small>
             </div>
             <div class="slogan">✦ делаю сайты, от которых хочется плакать от счастья ✦</div>
-            <a href="#order" class="btn-primary">💕 Заказать сайт</a>
-            <div style="margin-top: 15px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; color:#49082c;">
+            <a href="https://t.me/ssqwst" target="_blank" class="btn-primary">💕 Заказать сайт</a>
+            <div style="margin-top: 15px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; color:#5f182d;">
                 <span>📱 Telegram: @ssqwst</span>
                 <span>📸 VK: @ssqwst</span>
                 <span>💬 WhatsApp: +7 9093791696</span>
@@ -800,7 +765,7 @@
         </div>
 
         <!-- ============================================================ -->
-        <!-- ===== БЛОК 2: ПОРТФОЛИО (КАРУСЕЛЬ) ===== -->
+        <!-- ===== БЛОК 2: ПОРТФОЛИО ===== -->
         <!-- ============================================================ -->
         <div class="block">
             <div class="neon-sign">📸 портфолио</div>
@@ -813,7 +778,7 @@
                 <button class="carousel-btn prev" id="carouselPrev">‹</button>
                 <button class="carousel-btn next" id="carouselNext">›</button>
             </div>
-            <div style="text-align:center; margin-top:10px; color:#49082c; opacity:0.5; font-size:0.9rem;">
+            <div style="text-align:center; margin-top:10px; color:#5f182d; opacity:0.5; font-size:0.9rem;">
                 примеры моих работ
             </div>
         </div>
@@ -860,7 +825,7 @@
         <!-- ============================================================ -->
         <!-- ===== БЛОК 4: КАЛЬКУЛЯТОР ===== -->
         <!-- ============================================================ -->
-        <div class="block" id="order">
+        <div class="block">
             <div class="neon-sign">🧮 калькулятор стоимости</div>
             <div class="calculator-options" id="calcOptions">
                 <label><input type="checkbox" data-price="100"> 💕 Сайт-свидание (+100 ₽)</label>
@@ -935,7 +900,7 @@
                     <div class="title">Свидание-рандом</div>
                     <div class="desc">Кнопка «Куда пойдём?»</div>
                 </div>
-                <div class="feature-card" style="border: 2px dashed #a75a99;">
+                <div class="feature-card" style="border: 2px dashed #ac5471;">
                     <div class="icon">💡</div>
                     <div class="title">Своё предложение</div>
                     <div class="desc">Напиши, что хочешь добавить</div>
@@ -948,7 +913,7 @@
         <!-- ============================================================ -->
         <div class="block">
             <div class="neon-sign">📱 мои контакты</div>
-            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; color:#49082c; font-size:1.1rem;">
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; color:#5f182d; font-size:1.1rem;">
                 <div>📱 <strong>Telegram:</strong> @ssqwst</div>
                 <div>📸 <strong>VK:</strong> @ssqwst</div>
                 <div>💬 <strong>WhatsApp:</strong> +7 9093791696</div>
@@ -973,60 +938,19 @@
         </div>
 
         <!-- ============================================================ -->
-        <!-- ===== БЛОК 7: ЗАЯВКА ===== -->
-        <!-- ============================================================ -->
-        <div class="block">
-            <div class="neon-sign">📝 оставить заявку</div>
-            <form id="orderForm" onsubmit="sendOrder(event)">
-                <div class="form-group">
-                    <label>Твоё имя</label>
-                    <input type="text" id="userName" placeholder="Например, Алина" required>
-                </div>
-                <div class="form-group">
-                    <label>Телефон или Telegram</label>
-                    <input type="text" id="userContact" placeholder="@username или +7 999 123-45-67" required>
-                </div>
-                <div class="form-group">
-                    <label>Какой сайт нужен?</label>
-                    <select id="siteType">
-                        <option>Сайт-свидание</option>
-                        <option>Сайт-портфолио</option>
-                        <option>Сайт с плейлистом</option>
-                        <option>Сайт с картой</option>
-                        <option>Полный дизайн</option>
-                        <option>Сайт под ключ</option>
-                        <option>Другое</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Что добавить на сайт?</label>
-                    <textarea id="userWishes" placeholder="Напиши, что хочешь видеть на сайте..."></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Твоё предложение (если хочешь что-то своё)</label>
-                    <textarea id="userIdea" placeholder="Например: хочу добавить карту, плейлист и таймер..."></textarea>
-                </div>
-                <div style="text-align:center;">
-                    <button type="submit" class="btn-primary">💕 Отправить заявку</button>
-                </div>
-            </form>
-            <div id="formStatus" style="text-align:center; margin-top:12px; font-family:'Georgia',serif; color:#49082c; min-height:30px;"></div>
-        </div>
-
-        <!-- ============================================================ -->
-        <!-- ===== БЛОК 8: ДЕМО-ФИШКИ ===== -->
+        <!-- ===== БЛОК 7: ДЕМО-ФИШКИ ===== -->
         <!-- ============================================================ -->
         <div class="block">
             <div class="neon-sign">🎡 примеры фишек</div>
 
             <div style="margin-bottom:20px;">
                 <div class="section-title">💭 Цитата дня</div>
-                <div style="font-size:1.1rem; color:#49082c; font-family:'Georgia',serif; font-style:italic;" id="dailyQuote">
+                <div style="font-size:1.1rem; color:#5f182d; font-family:'Georgia',serif; font-style:italic;" id="dailyQuote">
                     «Любовь — это когда два человека смотрят в одном направлении»
                 </div>
             </div>
 
-            <!-- ===== КАЛЕНДАРЬ ДАТ (РАНДОМНЫЕ) ===== -->
+            <!-- ===== КАЛЕНДАРЬ ДАТ ===== -->
             <div style="margin-bottom:20px;">
                 <div class="section-title">📅 Календарь важных дат</div>
                 <div class="dates-grid" id="randomDatesGrid">
@@ -1226,7 +1150,7 @@
 
         function buildWheel() {
             const wheel = document.getElementById('wheel');
-            const colors = ['#472738', '#a75a99', '#9c7ab8', '#fc8198', '#472738', '#a75a99'];
+            const colors = ['#5f182d', '#ac5471', '#c8a7ae', '#dc9cb3', '#5f182d', '#ac5471'];
             const segmentAngle = 360 / wheelData.length;
             wheel.innerHTML = '<div class="wheel-center"></div>';
             wheelData.forEach((text, i) => {
@@ -1343,7 +1267,6 @@
             desc: 'Хэллоуин'
         }];
 
-        // Перемешиваем массив и берём 4 случайные даты
         function shuffleArray(arr) {
             for (let i = arr.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -1420,60 +1343,14 @@
             const result = document.getElementById('quizResult');
             if (selected === currentQuiz.correct) {
                 result.textContent = '✅ Правильно! Ты умница 💕';
-                result.style.color = '#472738';
+                result.style.color = '#5d2a3a';
             } else {
                 result.textContent = '❌ Не угадал(а)... Попробуй ещё!';
-                result.style.color = '#a75a99';
+                result.style.color = '#ac5471';
             }
         }
 
         loadRandomQuiz();
-
-        // ============================================================
-        // ===== ФОРМА ЗАЯВКИ (НОВЫЙ ТОКЕН) =====
-        // ============================================================
-        function sendOrder(e) {
-            e.preventDefault();
-            const name = document.getElementById('userName').value.trim();
-            const contact = document.getElementById('userContact').value.trim();
-            const siteType = document.getElementById('siteType').value;
-            const wishes = document.getElementById('userWishes').value.trim();
-            const idea = document.getElementById('userIdea').value.trim();
-
-            if (!name || !contact) {
-                document.getElementById('formStatus').textContent = '❌ Заполни имя и контакты!';
-                document.getElementById('formStatus').style.color = '#a75a99';
-                return;
-            }
-
-            const text = '📩 *Новая заявка с сайта SQST!*%0A%0A' +
-                '👤 Имя: ' + name + '%0A' +
-                '📱 Контакт: ' + contact + '%0A' +
-                '📂 Тип сайта: ' + siteType + '%0A' +
-                '💭 Пожелания: ' + (wishes || 'не указано') + '%0A' +
-                '💡 Своё предложение: ' + (idea || 'нет') +
-                '%0A%0A💕 Свяжись с клиентом!';
-
-            const token = '8755962408:AAF-LCf85Sh1i5jKMxCdoqW-44Loy3HTFJg';
-            const chatId = '661154987';
-
-            fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=Markdown`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.ok) {
-                        document.getElementById('formStatus').textContent = '✅ Заявка отправлена! Я свяжусь с тобой ❤️';
-                        document.getElementById('formStatus').style.color = '#472738';
-                        document.getElementById('orderForm').reset();
-                    } else {
-                        document.getElementById('formStatus').textContent = '❌ Ошибка отправки. Попробуй позже.';
-                        document.getElementById('formStatus').style.color = '#a75a99';
-                    }
-                })
-                .catch(() => {
-                    document.getElementById('formStatus').textContent = '❌ Ошибка отправки. Попробуй позже.';
-                    document.getElementById('formStatus').style.color = '#a75a99';
-                });
-        }
 
         // ======= ЦИТАТА ДНЯ =======
         const quotes = [
